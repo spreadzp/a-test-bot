@@ -24,7 +24,8 @@
     "precommit": "lint-staged",
     "test": "jasmine test/**/**.test.js",
     "test-one": "jasmine $PATH_TO_TEST",
-    "postinstall": "node post_install.js"
+    "postinstall": "node post_install.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --watch-poll"
   },
   "lint-staged": {
     "*.js": [
@@ -45,6 +46,7 @@
     "bootstrap": "^4.0.0-beta.2",
     "ccxt": "^1.12.97",
     "cexio-api-node": "^1.0.8",
+    "cli-color": "^1.2.0",
     "cliff": "^0.1.10",
     "colors": "^1.2.1",
     "commander": "^2.15.1",
@@ -80,6 +82,7 @@
     "mock-require": "^3.0.2",
     "moment": "^2.22.0",
     "mongodb": "^3.0.5",
+    "morgan": "^1.9.0",
     "node-bittrex-api": "^0.8.2",
     "node-ipc": "^9.1.1",
     "node-prowl": "^0.1.7",
@@ -104,6 +107,7 @@
     "stats-lite": "2.1.0",
     "style-loader": "^0.21.0",
     "superagent": "^3.8.2",
+    "supervisor": "^0.12.0",
     "talib": "^1.0.4",
     "timebucket": "^0.4.0",
     "trend": "0.3.0",
