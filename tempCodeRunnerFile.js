@@ -57,7 +57,7 @@ ipc.server.start();
  
 
   //var http = require('http');
-  var express = require('express')
+/*   var express = require('express')
   var http = require('http')
   var path = require('path')
  // var reload = require('./reload')
@@ -94,7 +94,7 @@ ipc.server.start();
   
   server.listen(app.get('port'), function () {
     console.log('Web server listening on port ' + app.get('port'))
-  })
+  }) */
 
 /* var server = http.createServer(function(request, response) {
   response.writeHead(200, {"Content-Type": "text/html"});
@@ -112,4 +112,4 @@ ipc.server.start();
 server.listen(9998);
 console.log("Server is listening");  */
 
- 
+exports.price = price;

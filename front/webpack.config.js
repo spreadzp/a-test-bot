@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   entry: './src/main.js',
@@ -8,6 +9,14 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  target: 'node',
+  node: {
+    console: false,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
+  externals: [nodeExternals()],
   module: {
     rules: [
       {
@@ -36,14 +45,15 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      { test: /\.json$/, loader: 'json-loader' }
     ]
   },
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ['*', '.webpack.js', '.web.js', '.js', '.vue', '.json']
   },
   devServer: {
     historyApiFallback: true,

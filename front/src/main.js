@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+const price = require('./../../tempCodeRunnerFile')
+console.log(price)
 
 new Vue({
   el: '#app',
