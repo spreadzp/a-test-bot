@@ -1,4 +1,5 @@
 {
     "URL_SERVER": "tcp://54.152.175.163:8000", 
-    "URL_BOT_SERVER": "18.184.70.181"    
+    "URL_BOT_SERVER": "18.196.15.151",
+    "URL_BOT_SERVER1": "18.184.70.181"    
 }
