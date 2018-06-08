@@ -1,7 +1,7 @@
 {
   "name": "a-bot",
-  "version": "4.1.0",
-  "description": "Cryptocurrency arbitrage trading bot",
+  "version": "1.1.0",
+  "description": "Cryptocurrency a-bot",
   "license": "MIT",
   "repository": {
     "type": "git"
